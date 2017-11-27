@@ -34,6 +34,11 @@ window = rg.TurtleWindow()
 roof= rg.SimpleTurtle()
 roof.pen = rg.Pen('midnight blue', 3)
 roof.speed=1114000000
+roof.pen_up()
+
+roof.go_to(rg.Point(-30,-180))
+
+roof.pen_down()
 
 for k in range(12):
     roof.forward(100)
@@ -51,11 +56,13 @@ for k in range(12):
     roof.forward(100)
     roof.right(60)
 
-window = rg.TurtleWindow()
+# window = rg.TurtleWindow()
 qwe= rg.SimpleTurtle()
 qwe.pen = rg.Pen('red', 3)
 qwe.speed=1114
-
+qwe.pen_up()
+qwe.go_to(rg.Point(-30,-180))
+qwe.pen_down()
 for k in range(12):
     qwe.pen_up()
     qwe.forward(100)
