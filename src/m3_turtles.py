@@ -56,7 +56,7 @@ window.delay(20)  # Bigger numbers mean slower animation.
 # Makes (constructs) a   SimpleTurtle   object.
 # ----------------------------------------------------------------------
 dave = rg.SimpleTurtle()
-
+dave.speed=111
 # ----------------------------------------------------------------------
 # Ask the SimpleTurtle objects to do things:
 # ----------------------------------------------------------------------
@@ -69,15 +69,21 @@ dave.forward(200)
 # ----------------------------------------------------------------------
 matt = rg.SimpleTurtle('turtle')
 matt.pen = rg.Pen('red', 30)
-matt.speed = 10  # Faster
+matt.speed = 100  # Faster
 matt.backward(50)
 matt.left(90)
 matt.forward(50)
+matt.draw_circle(50)
+matt.right(90)
+matt.draw_circle(50)
+matt.right(90)
+matt.draw_circle(50)
+
 
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Add a few more line of your own code above to make one of the
 #   existing Turtles move some more and/or have different
 #   characteristics.
@@ -88,10 +94,18 @@ matt.forward(50)
 #   As always, test by running the module.
 #
 ########################################################################
-
+qwe = rg.SimpleTurtle("turtle")
+qwe.speed=111
+qwe.pen = rg.Pen('blue', 30)
+qwe.right(150)
+qwe.forward(90)
+qwe.right(120)
+qwe.forward(90)
+qwe.right(120)
+qwe.forward(90)
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   The code above  CONSTRUCTS  two SimpleTurtle objects and gives those objects NAMES:
 #       dave    matt
 #
@@ -112,7 +126,7 @@ matt.forward(50)
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #
